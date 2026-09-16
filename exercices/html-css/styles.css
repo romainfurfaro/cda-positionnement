@@ -1,0 +1,38 @@
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  display: flex;
+}
+
+main {
+  max-width: 800px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+ul li {
+  border: 8px solid grey;
+  padding: 15px;
+  box-shadow: 2px 2px 0.2em black;
+}
+
+footer {
+  background-color: #ecf0f1;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
