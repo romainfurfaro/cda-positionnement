@@ -11,4 +11,12 @@ function fizzBuzz(n) {
     console.log(result);
   }
 }
-fizzBuzz(15);
+//fizzBuzz(15);
+
+function isPalindrome(str) {
+  let reverse = str.split("").reverse().join("");
+  return reverse == str;
+}
+
+console.log(isPalindrome("kayak")); // true
+console.log(isPalindrome("hello")); // false
