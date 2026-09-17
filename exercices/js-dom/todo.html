@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+  </head>
+  <style>
+    main {
+      display: flex;
+      justify-content: center;
+    }
+
+    input#input {
+      margin-right: 15px;
+    }
+
+    #taskList {
+      flex-flow: column;
+    }
+
+    button {
+      border: 0;
+    }
+    button#add {
+      background-color: #1cca53;
+    }
+    button.deleteBtn {
+      margin-left: 10px;
+      color: #ca391c;
+    }
+    .taskDone {
+      text-decoration: line-through;
+    }
+  </style>
+  <body>
+    <main>
+      <p id="count">0</p>
+      <input id="input" type="text" />
+      <button type="button" id="add">Ajouter</button>
+      <ul id="taskList"></ul>
+    </main>
+    <script src="todo.js"></script>
+  </body>
+</html>
